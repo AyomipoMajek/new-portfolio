@@ -22,3 +22,13 @@ a {
 ul {
   list-style: none;
 }
+
+.social {
+  font-size: 0.9rem;
+  color: #3cff00;
+}
+
+.socialIcon {
+  display: flex;
+  flex-direction: row;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import './navbar.css';
@@ -14,14 +14,19 @@ const Navbar = () => {
     } else {
       setColor(false);
     }
-
-    window.addEventListener('scroll', changeColor);
   };
+
+  useEffect(() => {
+    window.addEventListener('scroll', changeColor);
+    return () => {
+      window.removeEventListener('scroll', changeColor);
+    };
+  }, []);
 
   return (
     <div className={color ? 'header header-bg' : 'header'}>
       <Link to="/" className="logo">
-        <h1 style={{ color: '#3cff00' }}>M.A</h1>
+        <h1 style={{ color: '#3cff00', fontSize: '1.3rem' }}>M.A</h1>
       </Link>
       <ul className={click ? 'nav-menu active'
         : 'nav-menu'}
@@ -37,8 +42,8 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="hamburger">
-        {click ? <FaTimes size={20} style={{ color: '#3cff00' }} onClick={handleClick} />
-          : <FaBars size={20} style={{ color: '#3cff00' }} onClick={handleClick} /> }
+        {click ? <FaTimes size={20} style={{ color: '#fff' }} onClick={handleClick} />
+          : <FaBars size={20} style={{ color: '#fff' }} onClick={handleClick} /> }
       </div>
     </div>
   );
