@@ -38,7 +38,7 @@
 }
 
 .nav-menu li a {
- font-size: 2rem;
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -52,7 +52,7 @@
     align-items: center;
     padding: 1rem;
   }
-  
+
   .nav-menu {
     display: flex;
     flex-direction: row;
@@ -64,14 +64,14 @@
     left: 0;
     z-index: 1;
   }
-  
+
   .nav-menu li {
     list-style: none;
     padding: 0 1rem;
   }
-  
+
   .nav-menu li a {
-   font-size: 1.2rem;
-   font-weight: 500; 
+    font-size: 1.2rem;
+    font-weight: 500;
   }
 }
