@@ -1,8 +1,11 @@
 .herogen {
   width: 100%;
   background: rgba(0, 0, 0, 0.5);
-  height: 60vh;
+  height: 20vh;
   position: relative;
+  background-size: cover;
+  background-position: center top;
+  backdrop-filter: brightness(0.9);
 }
 
 .herogen::before {
@@ -10,6 +13,7 @@
   background: url(https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2531&q=80);
   background-size: cover;
   background-position: center top;
+  filter: blur(3px);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -28,20 +32,25 @@
 }
 
 .herogen h1 {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
 }
 
 .herogen p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   text-align: center;
 }
 
 @media screen and (min-width: 768px) {
+  .herogen {
+    height: 50vh;
+    width: 100%;
+  }
+
   .herogen h1 {
-    font-size: 3rem;
+    font-size: 1.5rem;
   }
 
   .herogen p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }

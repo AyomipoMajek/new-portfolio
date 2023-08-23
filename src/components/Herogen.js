@@ -1,17 +1,20 @@
 import './herogen.css';
-import React, { Component } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-class Herogen extends Component {
-  render() {
-    return (
-      <div className="herogen">
-        <div className="heading">
-          <h1>{this.props.heading}</h1>
-          <p>{this.props.text}</p>
-        </div>
-      </div>
-    );
-  }
-}
+const Herogen = ({ title, summary, backgroundImg }) => (
+  <div className="herogen" style={{ backgroundImage: `url(${backgroundImg})` }}>
+    <div className="heading">
+      <h1>{title}</h1>
+      <p>{summary}</p>
+    </div>
+  </div>
+);
+
+Herogen.propTypes = {
+  title: PropTypes.string.isRequired,
+  summary: PropTypes.string.isRequired,
+  backgroundImg: PropTypes.string.isRequired,
+};
 
 export default Herogen;

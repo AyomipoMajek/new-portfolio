@@ -1,13 +1,15 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Heroimg from '../components/Heroimg';
-import About from '../components/About';
+import Details from '../components/Details';
+import Form from '../components/Form';
 
 const Home = () => (
   <div>
     <Navbar />
     <Heroimg />
-    <About />
+    <Details />
+    <Form />
   </div>
 );
 
