@@ -59,3 +59,11 @@ ul {
   color: #000;
   transition: 0.3s;
 }
+
+
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 20%;
+    align-self: center;
+  }
+}

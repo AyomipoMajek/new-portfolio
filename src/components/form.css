@@ -1,6 +1,7 @@
 .contact {
-  margin: auto;
-  width: 100vw;
+  /* margin: auto; */
+  margin-top: auto;
+  width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
@@ -34,6 +35,7 @@
   line-height: 20px;
   color: #172b4d;
   outline: none;
+  margin-top: 0.5rem;
 }
 
 .single-line-input::placeholder {
@@ -83,4 +85,17 @@
   align-self: unset;
   animation-name: scale-up-center;
   animation-duration: 4s;
+}
+
+@media screen and (min-width: 768px) {
+
+  .contact {
+    margin-left: auto;
+    margin-right: auto;
+    width: 92%;
+  }
+
+  .contact form {
+    max-width: 900px;
+  }
 }
