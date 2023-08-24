@@ -8,7 +8,7 @@ import pages from '../assets/pages.jpg';
 const Details = () => {
   const backgroundImg = pages;
   const title = 'About Me';
-  const summary = 'A summary of who i am';
+  const summary = 'Me in the world of web development';
   return (
 
     <div className="about">
