@@ -17,7 +17,13 @@ const Details = () => {
           <Herogen title={title} summary={summary} backgroundImg={backgroundImg} />
 
           <div className="more">
-            <p>I&apos;m a dedicated Full Stack Developer with expertise in HTML, CSS, JavaScript, Ruby, React, Node.js, and Ruby on Rails. Proficient in database management and cloud deployment. Known for clean code and seamless user experiences. Eager to collaborate on innovative web projects.</p>
+            <p>
+              I&apos;m a dedicated Full Stack Developer with expertise in HTML,
+              CSS, JavaScript, Ruby, React, Node.js, and Ruby on Rails.
+              Proficient in database management and cloud deployment.
+              Known for clean code and seamless user experiences.
+              Eager to collaborate on innovative web projects.
+            </p>
             <h3 className="social">LET’S CONNECT</h3>
             <ul className="socialIcon">
               <li><SocialIcon url="https://twitter.com" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
