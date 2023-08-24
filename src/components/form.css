@@ -11,8 +11,19 @@
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 2rem;
   gap: 12px;
+  animation: fadeInUp 2s backwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 .contact form {
@@ -27,7 +38,6 @@
   box-sizing: border-box;
   height: 48px;
   padding: 15px;
-  border-radius: 8px;
   border: 1px solid #cfd8dc;
   font-family: 'Poppins-normal', sans-serif;
   font-weight: 400;
@@ -36,6 +46,8 @@
   color: #172b4d;
   outline: none;
   margin-top: 0.5rem;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .single-line-input::placeholder {
@@ -54,13 +66,14 @@
 .comment {
   box-sizing: border-box;
   height: 170px;
-  border-radius: 8px;
   padding: 15px;
   font-family: 'Poppins-normal', sans-serif;
   font-weight: 400;
   font-size: 15px;
   line-height: 24px;
   outline: none;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .comment::placeholder {
@@ -87,15 +100,25 @@
   animation-duration: 4s;
 }
 
+#btn2 {
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
 @media screen and (min-width: 768px) {
 
   .contact {
     margin-left: auto;
     margin-right: auto;
-    width: 92%;
+    width: 100%;
   }
 
   .contact form {
     max-width: 900px;
+  }
+
+  #btn2 {
+    font-size: 1.2rem;
+    width: 30%;
   }
 }

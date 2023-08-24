@@ -41,7 +41,7 @@
 
 .hero-text {
   display: flex;
-  max-width: 1104px;
+  max-width: 1204px;
   flex-direction: column;
   justify-content: center;
   gap: 12px;
@@ -56,11 +56,50 @@
 .hero-text h1 {
   font-size: 2.5rem;
   line-height: 3rem;
+  animation: slideIn 1.5s ease-in-out, fadeIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .hero-text p {
   font-size: 16px;
+  animation: slideInFromLeft 1.5s ease-in-out, fadeIn 1.5s ease-in-out;
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 .majek {
   color: #3cff00; /* Set the desired color for the word "Majek" */
@@ -78,7 +117,47 @@
 }
 
 @media screen and (min-width: 768px) {
+  .hero-text h1 {
+    font-size: 5rem;
+    line-height: 7rem;
+  }
+
+  .hero-text p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+  }
+
   .background .hero-text {
-    left: 40%;
+    left: 45%;
+  }
+
+  .social {
+    font-size: 1.9rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+ 
+  .background .hero-text {
+    top: 50%;
+    left: 50%;
+  }
+
+  .hero-text {
+    line-height: 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .hero-text p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  .social {
+    font-size: 1.2rem;
   }
 }

@@ -16,17 +16,19 @@ const Details = () => {
         <div className="aboutme">
           <Herogen title={title} summary={summary} backgroundImg={backgroundImg} />
 
-          <p>I&apos;m a dedicated Full Stack Developer with expertise in HTML, CSSeb projects.</p>
-          <h3 className="social">LET’S CONNECT</h3>
-          <ul className="socialIcon">
-            <li><SocialIcon url="https://twitter.com" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
-            <li><SocialIcon url="https://www.linkedin.com/in/ayomipomajek/" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
-            <li><SocialIcon url="https://github.com/AyomipoMajek" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
-          </ul>
+          <div className="more">
+            <p>I&apos;m a dedicated Full Stack Developer with expertise in HTML, CSS, JavaScript, Ruby, React, Node.js, and Ruby on Rails. Proficient in database management and cloud deployment. Known for clean code and seamless user experiences. Eager to collaborate on innovative web projects.</p>
+            <h3 className="social">LET’S CONNECT</h3>
+            <ul className="socialIcon">
+              <li><SocialIcon url="https://twitter.com" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
+              <li><SocialIcon url="https://www.linkedin.com/in/ayomipomajek/" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
+              <li><SocialIcon url="https://github.com/AyomipoMajek" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
+            </ul>
 
-          <a href="https://docs.google.com/document/d/1DCQsOfgIvYsjL7lI3ma-GyXfDoODmK0vfAe9w551I-w/edit?usp=sharing" download>
-            <button className="btn" type="button">Get my resume</button>
-          </a>
+            <a href="https://docs.google.com/document/d/1DCQsOfgIvYsjL7lI3ma-GyXfDoODmK0vfAe9w551I-w/edit?usp=sharing" download>
+              <button className="btn" id="btn4" type="button">Get my resume</button>
+            </a>
+          </div>
 
         </div>
         <div className="skillbox">

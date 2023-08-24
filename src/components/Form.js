@@ -35,7 +35,7 @@ const Form = () => {
         {/* Message input */}
         <textarea className="comment" placeholder="Write your message here" required name="message" />
         {/* Submit button */}
-        <button className="btn" type="submit">Get In Touch</button>
+        <button className="btn" id="btn2" type="submit">Get In Touch</button>
       </form>
     </section>
   );

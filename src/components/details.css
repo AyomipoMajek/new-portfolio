@@ -1,14 +1,25 @@
 .aboutme {
-  display: flex;
+  /* display: flex;
   max-width: 1104px;
   flex-direction: column;
   justify-content: center;
-  gap: 12px;
-  box-sizing: border-box;
-  padding: 0 6.4%;
+  box-sizing: border-box; */
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
+  animation: fadeInUp 2s backwards;
 }
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 
 .aboutme h1 {
   font-size: 2rem;
@@ -16,10 +27,29 @@
 
 .aboutme p {
   line-height: 1.5rem;
+  padding-bottom: 15px;
+  padding-top: 15px;
+}
+
+.more {
+  padding: 0 6.4%;
 }
 
 .skillbox {
-  margin-top: 8rem;
+  margin-top: 5rem;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  animation: bounce 1.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .skillbox p {
@@ -30,18 +60,26 @@
   width: 50px;
 }
 
+.skillbox li {
+  transition: transform 0.3s ease-in-out;
+}
+
+.skillbox li:hover {
+  transform: scale(1.2); /* Increase the size when hovered */
+}
+
 .languages {
   border: solid #fff;
-  border-radius: 20px;
   margin: 20px;
   padding: 20px;
   text-align: center;
+  background: rgba(255, 255, 255, 0.184);
 }
 
-.languages:hover {
-  background: rgba(255, 255, 255, 0.184);
+/* .languages:hover {
+  background: rgba(255, 255, 255, 0.374);
   transition: 0.3s;
-}
+} */
 
 .languages h4 {
   font-size: 1.3rem;
@@ -72,7 +110,19 @@
     height: 40vh;
   }
 
+  .more p {
+    font-size: 1.6rem;
+    line-height: 3rem;
+    padding-bottom: 10px;
+    padding-top: 2rem;
+  }
+
+  .aboutme h3 {
+    font-size: 1.7rem;
+  }
+
   .skillbox {
+    margin-top: 8rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -81,5 +131,69 @@
   .languages {
     width: 25%;
     margin: 2.6rem;
+  }
+
+  .languages h4 {
+    font-size: 1.6rem;
+    margin-left: 80px;
+  }
+
+  .languages p {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutme h1 {
+    font-size: 1.5rem;
+    /* padding-top: 60px; */
+  }
+
+  .aboutme p {
+    font-size: 1.2rem;
+    /* padding-bottom: 5px; */
+  }
+
+  .aboutme h3 {
+    font-size: 1rem;
+    /* padding-bottom: 5px; */
+  }
+
+  .more p {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding-bottom: 10px;
+    padding-top: 2rem;
+  }
+
+  .languages {
+    width: 30%;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 12rem;
+  }
+
+  .languages h4 {
+    font-size: 1.2rem;
+    margin-left: 40px;
+  }
+
+  .languages p {
+    font-size: 0.8rem;
+  }
+
+  .my-languages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .skillbox img {
+    width: 40px;
+  }
+
+  #btn4 {
+    font-size: 15px;
+    width: 30%;
   }
 }
