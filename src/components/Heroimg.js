@@ -1,12 +1,13 @@
 import './heroimg.css';
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
-import realhome from '../assets/realhome.jpg';
+// import realhome from '../assets/realhome.jpg';
+import newback from '../assets/newback.jpg';
 
 const Heroimg = () => (
   <div className="background">
     <div className="heroimg">
-      <img className="home-img" src={realhome} alt="homepagebackground" />
+      <img className="home-img" src={newback} alt="homepagebackground" />
     </div>
     <div className="hero-text">
       <h1>

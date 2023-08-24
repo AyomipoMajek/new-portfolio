@@ -13,6 +13,7 @@
   box-sizing: border-box;
   gap: 12px;
   animation: fadeInUp 2s backwards;
+  background-color: #6e756c71;
 }
 
 @keyframes fadeInUp {
@@ -33,6 +34,8 @@
   flex-direction: column;
   gap: 18px;
   max-width: 447px;
+  padding-bottom: 7rem;
+  padding-top: 2rem;
 }
 
 .single-line-input {
@@ -115,6 +118,7 @@
 
   .contact form {
     max-width: 900px;
+    padding-bottom: 40vh;
   }
 
   #btn2 {

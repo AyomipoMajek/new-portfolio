@@ -1,12 +1,10 @@
-.aboutme {
-  /* display: flex;
-  max-width: 1104px;
-  flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box; */
-  width: 100%;
+.about {
+  background-color: #6e756c71;
+  padding-bottom: 3vh;
+}
 
-  /* margin: auto; */
+.aboutme {
+  width: 100%;
   animation: fadeInUp 2s backwards;
 }
 

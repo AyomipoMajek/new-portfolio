@@ -1,5 +1,6 @@
 .work-container {
   animation: fadeInUp 2s backwards;
+  background-color: #6e756c71;
 }
 
 @keyframes fadeInUp {
