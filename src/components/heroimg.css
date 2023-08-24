@@ -31,14 +31,6 @@
   opacity: 0.8;
 }
 
-.background .hero-text {
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  /* text-align: center; */
-}
-
 .hero-text {
   display: flex;
   max-width: 1204px;
@@ -53,6 +45,15 @@
   line-height: 1.5rem;
 }
 
+.background .hero-text {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+
+  /* text-align: center; */
+}
+
 .hero-text h1 {
   font-size: 2.5rem;
   line-height: 3rem;
@@ -63,6 +64,7 @@
   0% {
     transform: translateX(50%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -72,6 +74,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -86,6 +89,7 @@
   0% {
     transform: translateX(-50%);
   }
+
   100% {
     transform: translateX(0);
   }
@@ -95,11 +99,11 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
-
 
 .majek {
   color: #3cff00; /* Set the desired color for the word "Majek" */
@@ -111,6 +115,7 @@
   0% {
     text-shadow: 0 0 10px #164009, 0 0 20px #3cff00, 0 0 90px #3cff00;
   }
+
   100% {
     text-shadow: 0 0 20px #1d530d, 0 0 40px #3cff00, 0 0 90px #3cff00;
   }
@@ -137,14 +142,13 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
- 
+  .hero-text {
+    line-height: 1rem;
+  }
+
   .background .hero-text {
     top: 50%;
     left: 50%;
-  }
-
-  .hero-text {
-    line-height: 1rem;
   }
 
   .hero-text h1 {

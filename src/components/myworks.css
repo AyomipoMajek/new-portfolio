@@ -7,6 +7,7 @@
     transform: translateY(20px);
     opacity: 0;
   }
+
   50% {
     transform: translateY(0);
     opacity: 1;
@@ -26,7 +27,7 @@
 }
 
 .project-card:hover .project-image-container {
-  transform: scale(1.0);
+  transform: scale(1);
 }
 
 .project-image-container h4 {
@@ -52,6 +53,7 @@
   padding-top: 10px;
   padding-right: 20px;
   display: none;
+
   /* margin-top: 10px; */
   animation: fadeIn 0.5s ease-in-out;
 }
@@ -85,6 +87,7 @@
 .btn {
   margin-right: 10px;
   margin-top: 2px;
+
   /* font-size: 10px; */
   padding: 7px;
 }
@@ -93,6 +96,7 @@
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -103,7 +107,8 @@
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0px;
+    gap: 0;
+
     /* margin-left: 50px; */
   }
 
@@ -116,6 +121,7 @@
     max-height: 15rem;
     min-height: 15rem;
     width: 100%;
+
     /* margin-bottom: 0.5rem; */
   }
 
@@ -156,7 +162,8 @@
     padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 0px;
+    gap: 0;
+
     /* margin-left: 50px; */
   }
 }
