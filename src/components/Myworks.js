@@ -7,7 +7,6 @@ import rubyonrails from '../assets/portfolio/rubyonrails.png';
 import updatetasks from '../assets/portfolio/updatetasks.png';
 import updateleaderboard from '../assets/portfolio/updateleaderboard.png';
 import vibranium from '../assets/portfolio/vibranium.png';
-import calculator from '../assets/portfolio/calculator.png';
 import doglovers from '../assets/portfolio/doglovers.png';
 
 const Myworks = () => {
