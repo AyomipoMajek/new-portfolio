@@ -77,15 +77,6 @@ const Myworks = () => {
     },
 
     {
-      name: 'Math Magicians',
-      description: 'The "math-magicians" website, built using React, features a dedicated calculator page that functions as a desktop application, allowing users to perform basic calculations with ease.',
-      image: calculator,
-      technologies: ['React', 'JavaScript', 'HTML', 'SASS'],
-      linkToLiveVersion: 'https://math-magicians-orbq.onrender.com/',
-      linkToSource: 'https://github.com/AyomipoMajek/math-magicians',
-    },
-
-    {
       name: 'Canine Conference',
       description: 'The Canine Conference project serves as a website designed for an upcoming dog lovers conference. It offers details about the event date and includes information from previous conferences. This platform was developed using HTML, CSS, and JavaScript.',
       image: doglovers,
