@@ -50,8 +50,21 @@
   transform: translate(-50%, -50%);
   top: 45%;
   left: 50%;
+}
 
-  /* text-align: center; */
+.myinfo {
+  animation: fadeInOut 3s infinite;
+}
+
+@keyframes fadeInOut {
+  0%,
+  100% {
+    opacity: 0.6;
+  }
+
+  50% {
+    opacity: 1;
+  }
 }
 
 .hero-text h1 {
@@ -106,19 +119,7 @@
 }
 
 .majek {
-  color: #3cff00; /* Set the desired color for the word "Majek" */
-  text-shadow: 0 0 10px #3cff00, 0 0 20px #3cff00, 0 0 90px #3cff00;
-  animation: glowAnimation 1.5s ease-in-out infinite alternate;
-}
-
-@keyframes glowAnimation {
-  0% {
-    text-shadow: 0 0 10px #164009, 0 0 20px #3cff00, 0 0 90px #3cff00;
-  }
-
-  100% {
-    text-shadow: 0 0 20px #1d530d, 0 0 40px #3cff00, 0 0 90px #3cff00;
-  }
+  color: #3cff00;
 }
 
 @media screen and (min-width: 768px) {
