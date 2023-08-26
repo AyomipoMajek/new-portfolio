@@ -52,7 +52,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://majek.vercel.apphttps://majek.vercel.app//)
+- [Live Demo Link](https://majek.vercel.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
