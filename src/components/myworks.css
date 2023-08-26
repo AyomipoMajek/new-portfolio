@@ -1,0 +1,170 @@
+.work-container {
+  animation: fadeInUp 2s backwards;
+  background-color: #6e756c71;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-image-container {
+  transition: transform 0.3s ease-in-out;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.184);
+  margin: 5px;
+}
+
+.project-card:hover .project-image-container {
+  transform: scale(1);
+}
+
+.project-image-container h4 {
+  font-size: 0.8rem;
+}
+
+.project-card img {
+  /* margin-top: 1rem; */
+  max-height: 10rem;
+  min-height: 10rem;
+  width: 100%;
+}
+
+.project-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.885);
+  color: white;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 20px;
+  display: none;
+
+  /* margin-top: 10px; */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.project-card:hover .project-details {
+  display: block;
+}
+
+.project-details h3 {
+  font-size: 15px;
+}
+
+.project-details p {
+  font-size: 12px;
+}
+
+.tech {
+  display: flex;
+  flex-direction: row;
+}
+
+.tech li {
+  border: none;
+  font-size: 0.7rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  padding: 3px;
+  background-color: #000;
+}
+
+.btn {
+  margin-right: 10px;
+  margin-top: 2px;
+
+  /* font-size: 10px; */
+  padding: 7px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .project-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+
+    /* margin-left: 50px; */
+  }
+
+  .project-card {
+    width: 100%;
+  }
+
+  .project-card img {
+    /* margin-top: 2rem; */
+    max-height: 15rem;
+    min-height: 15rem;
+    width: 100%;
+
+    /* margin-bottom: 0.5rem; */
+  }
+
+  .project-image-container h4 {
+    font-size: 0.9rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .project-details {
+    padding: 20px;
+  }
+
+  .project-details h3 {
+    font-size: 1.2rem;
+  }
+
+  .project-details p {
+    font-size: 1rem;
+  }
+
+  .tech li {
+    margin-right: 5px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    padding: 5px;
+  }
+
+  #btn3 {
+    width: 30%;
+    font-size: 0.9rem;
+    padding: 4px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .project-container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0;
+
+    /* margin-left: 50px; */
+  }
+}
