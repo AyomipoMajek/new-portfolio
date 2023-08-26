@@ -8,6 +8,7 @@ import updatetasks from '../assets/portfolio/updatetasks.png';
 import updateleaderboard from '../assets/portfolio/updateleaderboard.png';
 import vibranium from '../assets/portfolio/vibranium.png';
 import doglovers from '../assets/portfolio/doglovers.png';
+import myportfolio from '../assets/portfolio/myportfolio.png';
 
 const Myworks = () => {
   const backgroundImg = pages;
@@ -82,6 +83,15 @@ const Myworks = () => {
       technologies: ['JavaScript', 'HTML', 'CSS'],
       linkToLiveVersion: 'https://ayomipomajek.github.io/Canine-Conference/',
       linkToSource: 'https://github.com/AyomipoMajek/Canine-Conference',
+    },
+
+    {
+      name: 'My Portfolio',
+      description: 'This is my first trial at creating my portfolio as required by Microverse. It was created using HTML, CSS and JavaScript.',
+      image: myportfolio,
+      technologies: ['JavaScript', 'HTML', 'CSS'],
+      linkToLiveVersion: 'https://ayomipomajek.github.io/My-Portfolio/',
+      linkToSource: 'https://github.com/AyomipoMajek/My-Portfolio',
     },
   ];
 
