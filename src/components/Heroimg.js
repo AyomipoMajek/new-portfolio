@@ -20,11 +20,10 @@ const Heroimg = () => (
         </h1>
       </div>
       <p>
-        Empower your digital aspirations with my coding prowess!
-        From dynamic products to standout features and captivating websites,
-        I&apos;m your software development partner.
-        Explore my portfolio for a taste of my expertise.
-        Ready to transform ideas into reality?
+        I&apos;m your full-stack software development partner.
+        I am highly skilled in creating dynamic products, standout features
+        and captivating websites.
+        Let&apos;s get started.
       </p>
       <h3 className="social">LET&apos;S CONNECT</h3>
       <ul className="socialIcon">
