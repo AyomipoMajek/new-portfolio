@@ -124,7 +124,7 @@
   }
 
   .skillbox {
-    margin-top: 10rem;
+    margin-top: 14rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,6 +191,10 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
+  }
+
+  .skillbox {
+    margin-top: 10rem;
   }
 
   .skillbox img {
