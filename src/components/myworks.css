@@ -38,8 +38,8 @@
 
 .project-card img {
   /* margin-top: 1rem; */
-  max-height: 10rem;
-  min-height: 10rem;
+  max-height: 11rem;
+  min-height: 11rem;
   width: 100%;
 }
 
@@ -119,12 +119,9 @@
   }
 
   .project-card img {
-    /* margin-top: 2rem; */
     max-height: 15rem;
     min-height: 15rem;
     width: 100%;
-
-    /* margin-bottom: 0.5rem; */
   }
 
   .project-image-container h4 {
@@ -167,5 +164,11 @@
     gap: 0;
 
     /* margin-left: 50px; */
+  }
+
+  .project-card img {
+    max-height: 13rem;
+    min-height: 13rem;
+    width: 100%;
   }
 }

@@ -40,10 +40,6 @@
 
 .skillbox {
   margin-top: 5rem;
-
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
   animation: bounce 1.5s infinite alternate;
 }
 
@@ -91,8 +87,9 @@
   font-size: 1.3rem;
   padding-bottom: 8px;
   margin-bottom: 20px;
-  width: 50%;
-  margin-left: 60px;
+  width: 100%;
+
+  /* margin-left: 60px; */
 }
 
 .languages h4::after {
@@ -142,6 +139,9 @@
   .languages h4 {
     font-size: 1.6rem;
     margin-left: 80px;
+    width: 50%;
+
+    /* padding-right: 60px; */
   }
 
   .languages p {
@@ -185,6 +185,8 @@
   .languages h4 {
     font-size: 1.2rem;
     margin-left: 40px;
+    width: 90%;
+    padding-right: 60px;
   }
 
   .languages p {
