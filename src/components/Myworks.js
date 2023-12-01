@@ -21,7 +21,7 @@ const Myworks = () => {
       name: 'PayLogic FinTech App',
       description: 'The Paylogic app is a FinTech web app that basically gives the user every information they need about managing and securing their finances.',
       image: PayLogic,
-      technologies: ['React', 'HTML', 'CSS'],
+      technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
       linkToLiveVersion: 'https://paylogic-fintech.vercel.app/',
       linkToSource: 'https://github.com/AyomipoMajek/paylogic-fintech',
       dot: 'assets/Counter.svg',
