@@ -9,6 +9,7 @@ import updateleaderboard from '../assets/portfolio/updateleaderboard.png';
 import vibranium from '../assets/portfolio/vibranium.png';
 import doglovers from '../assets/portfolio/doglovers.png';
 import myportfolio from '../assets/portfolio/myportfolio.png';
+import PayLogic from '../assets/portfolio/PayLogic.png';
 
 const Myworks = () => {
   const backgroundImg = pages;
@@ -16,6 +17,20 @@ const Myworks = () => {
   const summary = 'A few of my works';
 
   const projects = [
+    {
+      name: 'PayLogic FinTech App',
+      description: 'The Paylogic app is a FinTech web app that basically gives the user every information they need about managing and securing their finances.',
+      image: PayLogic,
+      technologies: ['React', 'HTML', 'CSS'],
+      linkToLiveVersion: 'https://paylogic-fintech.vercel.app/',
+      linkToSource: 'https://github.com/AyomipoMajek/paylogic-fintech',
+      dot: 'assets/Counter.svg',
+      canopyli1: 'Front End Dev',
+      canopyli2: '2023',
+      btnId: 'see-project-1',
+      contentDirection: '',
+    },
+
     {
       name: 'Awesome Books',
       description: 'This is a basic website that allows users to add/remove books from a list. The list of books added by the user are saved to the local storage and are always available to the user at anytime.',
@@ -34,7 +49,7 @@ const Myworks = () => {
       name: 'Budget App',
       description: 'It provides features such as user authentication, category creation for budgeting purposes, and the ability to add transactions to track expenses and income.to simplify the process of budgeting.',
       image: rubyonrails,
-      technologies: ['RUBY ON RAILS', 'HTML', 'CSS'],
+      technologies: ['Ruby on Rails', 'HTML', 'CSS'],
       linkToLiveVersion: 'https://budget-app-3ci8.onrender.com',
       linkToSource: 'https://github.com/AyomipoMajek/budget-app',
       dot: 'assets/Counter.svg',
