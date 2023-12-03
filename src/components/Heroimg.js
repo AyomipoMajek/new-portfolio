@@ -27,9 +27,9 @@ const Heroimg = () => (
       </p>
       <h3 className="social">LET&apos;S CONNECT</h3>
       <ul className="socialIcon">
-        <li><SocialIcon className="icon" url="https://twitter.com/pawroyale_" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 50, height: 50 }} /></li>
-        <li><SocialIcon className="icon" url="https://www.linkedin.com/in/ayomipomajek/" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 50, height: 50 }} /></li>
-        <li><SocialIcon className="icon" url="https://github.com/AyomipoMajek" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 50, height: 50 }} /></li>
+        <li><SocialIcon className="icon" url="https://twitter.com/pawroyale_" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
+        <li><SocialIcon className="icon" url="https://www.linkedin.com/in/ayomipomajek/" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
+        <li><SocialIcon className="icon" url="https://github.com/AyomipoMajek" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
       </ul>
     </div>
   </div>

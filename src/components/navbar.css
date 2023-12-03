@@ -76,13 +76,13 @@
   }
 
   .nav-menu li a {
-    font-size: 1.2rem;
+    font-size: 15px;
     font-weight: 500;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  @media screen and (min-width: 1024px) {
     .nav-menu li a {
-      font-size: 1rem;
+      font-size: 15px;
     }
   }
 }
