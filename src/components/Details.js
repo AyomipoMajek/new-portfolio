@@ -24,7 +24,7 @@ const Details = () => {
               Known for clean code and seamless user experiences.
               Eager to collaborate on innovative web projects.
             </p>
-            <h3 className="social">LET’S CONNECT</h3>
+            <h3 className="social" id="connect">LET’S CONNECT</h3>
             <ul className="socialIcon" id="socialicon2">
               <li><SocialIcon url="https://twitter.com/pawroyale_" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
               <li><SocialIcon url="https://www.linkedin.com/in/ayomipomajek/" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
