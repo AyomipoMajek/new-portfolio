@@ -18,9 +18,9 @@ const Details = () => {
 
           <div className="more">
             <p>
-              I&apos;m a dedicated Full Stack Developer with expertise in HTML,
-              CSS, JavaScript, Ruby, React, Node.js, and Ruby on Rails.
-              Proficient in database management and cloud deployment.
+              I&apos;m a dedicated Front End Developer with expertise in HTML,
+              CSS, JavaScript, React and Next.Js.
+              Proficient in building modern, responsive, and user-friendly web applications.
               Known for clean code and seamless user experiences.
               Eager to collaborate on innovative web projects.
             </p>
@@ -31,7 +31,7 @@ const Details = () => {
               <li><SocialIcon url="https://github.com/AyomipoMajek" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
             </ul>
 
-            <a href="https://docs.google.com/document/d/1DCQsOfgIvYsjL7lI3ma-GyXfDoODmK0vfAe9w551I-w/edit?usp=sharing" download>
+            <a href="https://docs.google.com/document/d/1re9evdELgKV9l6u9mVe2yZCdJGa97HTF_L-EWxtpkV4/edit?usp=sharing" download>
               <button className="btn" id="btn4" type="button">Get my resume</button>
             </a>
           </div>
