@@ -20,7 +20,7 @@ const Heroimg = () => (
         </h1>
       </div>
       <p>
-        I&apos;m your full-stack software development partner.
+        I&apos;m your front-end software development partner.
         I am highly skilled in creating dynamic products, standout features
         and captivating websites.
         Let&apos;s get started.
