@@ -94,6 +94,11 @@
   padding: 7px;
 }
 
+#btn5 {
+  margin-left: 5px;
+  font-size: 10px;
+}
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -153,6 +158,11 @@
     width: 30%;
     font-size: 0.9rem;
     padding: 4px;
+  }
+
+  #btn5 {
+    margin-left: 1.5rem;
+    font-size: 12px;
   }
 }
 

@@ -1,5 +1,5 @@
 import './myworks.css';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import pages from '../assets/pages.jpg';
 import Herogen from './Herogen';
 import updatebooks from '../assets/portfolio/updatebooks.png';
@@ -10,6 +10,7 @@ import vibranium from '../assets/portfolio/vibranium.png';
 import doglovers from '../assets/portfolio/doglovers.png';
 import myportfolio from '../assets/portfolio/myportfolio.png';
 import PayLogic from '../assets/portfolio/PayLogic.png';
+import aria from '../assets/portfolio/aria.png';
 
 const Myworks = () => {
   const backgroundImg = pages;
@@ -17,6 +18,20 @@ const Myworks = () => {
   const summary = 'A few of my works';
 
   const projects = [
+    {
+      name: 'Aria Project',
+      description: 'Aria Projects Ltd specializes in project management, consulting, and service delivery. Its website, built with React, offers a smooth, responsive experience using CSS for styling and FontAwesome icons, ensuring compatibility across all devices.',
+      image: aria,
+      technologies: ['React', 'JavaScript', 'HTML', 'CSS'],
+      linkToLiveVersion: 'https://aria-project.vercel.app',
+      linkToSource: 'https://github.com/AyomipoMajek/aria-project.git',
+      dot: 'assets/Counter.svg',
+      canopyli1: 'Front End Dev',
+      canopyli2: '2024',
+      btnId: 'see-project-1',
+      contentDirection: '',
+    },
+
     {
       name: 'PayLogic FinTech App',
       description: 'The Paylogic app is a FinTech web app that basically gives the user every information they need about managing and securing their finances.',
@@ -110,11 +125,36 @@ const Myworks = () => {
     },
   ];
 
+  const [visibleProjects, setVisibleProjects] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setVisibleProjects(9);
+      } else {
+        setVisibleProjects(3);
+      }
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const showMore = () => {
+    setVisibleProjects(projects.length);
+  };
+
+  const showLess = () => {
+    setVisibleProjects(window.innerWidth >= 768 ? 9 : 3);
+  };
+
   return (
     <div className="work-container">
       <Herogen title={title} summary={summary} backgroundImg={backgroundImg} />
       <div className="project-container">
-        {projects.map((project) => (
+        {projects.slice(0, visibleProjects).map((project) => (
           <div className="project-card" key={project.id}>
             <div className="project-image-container">
               <img src={project.image} alt={project.name} />
@@ -146,6 +186,15 @@ const Myworks = () => {
           </div>
         ))}
       </div>
+      {visibleProjects < projects.length ? (
+        <button className="btn" id="btn5" type="button" onClick={showMore}>
+          See More
+        </button>
+      ) : (
+        <button className="btn" id="btn5" type="button" onClick={showLess}>
+          See Less
+        </button>
+      )}
     </div>
   );
 };

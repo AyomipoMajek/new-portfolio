@@ -31,7 +31,7 @@ const Details = () => {
               <li><SocialIcon url="https://github.com/AyomipoMajek" target="_blank" fgColor="#fff" bgColor="transparent" style={{ width: 40, height: 40 }} /></li>
             </ul>
 
-            <a href="https://docs.google.com/document/d/1re9evdELgKV9l6u9mVe2yZCdJGa97HTF_L-EWxtpkV4/edit?usp=sharing" download>
+            <a href="https://docs.google.com/document/d/18wDzNakU994re-6lGGw4MJH_y8Mq_E2P3SeSyx3sO3s/edit?usp=sharing" download>
               <button className="btn" id="btn4" type="button">Get my resume</button>
             </a>
           </div>
